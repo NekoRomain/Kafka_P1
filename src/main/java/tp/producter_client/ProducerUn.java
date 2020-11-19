@@ -34,11 +34,12 @@ public class ProducerUn extends TimerTask {
             producer.send(record, new ProducerCallBack());
         }
     }
+
     private class ProducerCallBack implements Callback {
 
         @Override
         public void onCompletion(RecordMetadata recordMetadata, Exception e) {
-            if (e != null){
+            if (e != null) {
                 e.printStackTrace();
             }
         }
