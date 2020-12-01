@@ -14,7 +14,7 @@ public class Main {
 
         Timer timer = new Timer();
         //TODO Mettre à 1 800 000 pour 30 min
-        timer.schedule(p, 0, 1800000);
+        timer.schedule(p, 0, 1000*60*30);
 
         while (true) {
 
